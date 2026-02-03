@@ -7,5 +7,5 @@ wheel:
 	python -m build --no-isolation --wheel
 
 install: wheel
-	pip uninstall -y pyopenssl
-	pip install dist/*.whl
+	uv pip uninstall pyopenssl
+	uv pip install dist/*.whl
